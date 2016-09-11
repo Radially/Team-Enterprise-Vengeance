@@ -20,7 +20,7 @@ double linearIRS(int sensorValue) {
   double b = 8;
   double c = 0;
   double k = 18500;
-  double delta = sensorVal - c;
+  double delta = sensorValue - c;
   double result = (k - delta) / (a * delta);
   return result;
 }
