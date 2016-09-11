@@ -1,5 +1,7 @@
 /*  The method below linearize the input values of the distance sensor GP2D12
  *  The method get the (int)value and return (double)distance in cm
+ *  WARNING: irrelevant up to 11cm, unstable above 50cm
+ *  
  *  Theory www.cs.uml.edu/teams-academy/uploads/Robots/Nonlinear.pdf
  *  Code by J.M.Friedman
  */
@@ -15,7 +17,6 @@ void loop() {
 }
 
 double linearIRS(int sensorValue) {
-  //theory  www.cs.uml.edu/teams-academy/uploads/Robots/Nonlinear.pdf
   double a = 3;
   double b = 8;
   double c = 0;
