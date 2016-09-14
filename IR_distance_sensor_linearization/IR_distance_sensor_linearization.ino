@@ -1,5 +1,5 @@
-/*  The method below linearize the input values of the distance sensor GP2D12
- *  The method get the (int)value and return (double)distance in cm
+/*  The function below linearize the input values of the distance sensor GP2D12
+ *  The function get the (int)value and return (double)distance in cm
  *  WARNING: irrelevant up to 11cm, unstable above 50cm
  *  
  *  Theory www.cs.uml.edu/teams-academy/uploads/Robots/Nonlinear.pdf
